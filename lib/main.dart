@@ -26,7 +26,7 @@ void main() => runApp(
     builder: (context) => MaterialApp(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      home:  MyHomePage(),
+      home:  CategoryHomeScreen(),
     ), // Wrap your app
   ),
 );

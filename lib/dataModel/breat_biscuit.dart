@@ -1,5 +1,5 @@
-class Auto {
-  Auto({
+class BreadBiscuit {
+  BreadBiscuit({
     required this.data,
     required this.links,
     required this.meta,
@@ -12,7 +12,7 @@ class Auto {
   late final bool success;
   late final int status;
 
-  Auto.fromJson(Map<String, dynamic> json){
+  BreadBiscuit.fromJson(Map<String, dynamic> json){
     data = List.from(json['data']).map((e)=>Data.fromJson(e)).toList();
     links = Links.fromJson(json['links']);
     meta = Meta.fromJson(json['meta']);
@@ -104,7 +104,7 @@ class Links {
   Links({
     required this.details,
   });
-  late final String details;
+  late final String? details;
 
   Links.fromJson(Map<String, dynamic> json){
     details = json['details'];
